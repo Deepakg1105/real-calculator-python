@@ -21,9 +21,10 @@ def performMath():
     global pre
     equ= ""
     if pre == 0:
-        equ = input("Enter equation: ")
+        equ = input(bcolors.BOLD + bcolors.OKYELLOW + "Enter equation: " + bcolors.ENDC)
     else:
-        equ= input(str(pre))
+        
+        equ= input(bcolors.OKGREEN + bcolors.BOLD + str(pre) + bcolors.ENDC)
 
     if(equ == 'quit'):
         print(bcolors.SKYBLUE + bcolors.BOLD + "Good Bye...\n" + bcolors.ENDC)
